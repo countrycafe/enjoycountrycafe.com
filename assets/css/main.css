@@ -94,7 +94,7 @@ hr {
 }
 .btn-theme {
     color: #ffffff;
-    background-color: #74cfae;
+    background-color: #D9B359;
     border-color: transparent;
 }
 .btn {
@@ -126,7 +126,7 @@ hr {
     font-size: 90px;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #74cfae;
+    color: #D9B359;
 }
 #intro h2 {
     color: #c0c0c0;
@@ -135,7 +135,7 @@ hr {
 /* Specials */
 
 #specials {
-    background-color: #74cfae;
+    background-color: #D9B359;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 0px;
@@ -188,6 +188,6 @@ hr {
 /* Menu */
 
 #menu-active {
-    background-color: #F06060;
-    border-color: #F06060;
+    background-color: #D9B359;
+    border-color: #D9B359;
 }

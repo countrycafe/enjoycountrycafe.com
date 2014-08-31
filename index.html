@@ -5,19 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="Country Cafe is a Congerville IL based restraunt where truely good food is served">
+    <meta name="author" content="Evan Wieland">
     <title>Enjoy Country Caf&#233;</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/chart.js"></script>
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,21 +40,19 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#contact">Contact</a>
-                    </li>
+                    <button type="button" class="btn btn-theme btn-lg" data-toggle="modal" data-target="#myModal">Menu</button>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </div>
 
-
     <div id="hello">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 centered">
-                    <h1>Bolt Theme</h1>
-                    <h2>make bg img salebarn chalkboard</h2>
+                    <h1 class="fa fa-coffee"></h1>
+                    <h2>country cooking</h2>
                 </div>
                 <!-- /col-lg-8 -->
             </div>
@@ -64,6 +61,7 @@
         <!-- /container -->
     </div>
     <!-- /hello -->
+    <div id="special"></div>
 
     <div id="green">
         <div class="container">
@@ -71,7 +69,6 @@
                 <div class="col-lg-5 centered">
                     <img src="assets/img/iphone.png" alt="">
                 </div>
-
                 <div class="col-lg-7 centered">
                     <h3>WEDSDAY'S SPECIAL</h3>
                     <p>Meatball Sub Sandwhichs with a Side Salad and Tossed Apples</p>
@@ -79,22 +76,22 @@
             </div>
         </div>
     </div>
-
+    <div id="popular"></div>
     <div class="container">
         <div class="row centered mt grid">
-            <h3>OUT MOST POPULAR DISHES</h3>
+            <h3>OUR MOST POPULAR DISHES</h3>
             <div class="mt"></div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4" id="pop-dish">
                 <a href="#">
                     <img src="holder.js/300x300">
                 </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4" id="pop-dish">
                 <a href="#">
                     <img src="holder.js/300x300">
                 </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4" id="pop-dish">
                 <a href="#">
                     <img src="holder.js/300x300">
                 </a>
@@ -102,14 +99,72 @@
         </div>
 
         <div class="row mt centered">
-            <div class="col-lg-7 col-lg-offset-1 mt">
-                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            </div>
-
-            <div class="col-lg-3 mt">
+            <div class="col-lg-12 mt">
                 <p>
-                    <button type="button" class="btn btn-theme btn-lg">Email Me!</button>
+                    <button type="button" class="btn btn-theme btn-lg" data-toggle="modal" data-target="#myModal">Show Entire Menu</button>
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Menu</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            Sides
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item active">
+                            Plates
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            Cras justo odio
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -117,125 +172,36 @@
 
     <div id="skills">
         <div class="container">
-            <div class="row centered">
-                <h3>OUR SKILLS</h3>
-                <div class="col-lg-3 mt">
-                    <canvas id="javascript" height="130" width="130"></canvas>
-                    <p>Javascript</p>
-                    <br>
-                    <script>
-                        var doughnutData = [
-                            {
-                                value: 70,
-                                color: "#74cfae"
-        },
-                            {
-                                value: 30,
-                                color: "#3c3c3c"
-        }
-       ];
-                        var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                </div>
-                <div class="col-lg-3 mt">
-                    <canvas id="bootstrap" height="130" width="130"></canvas>
-                    <p>Bootstrap</p>
-                    <br>
-                    <script>
-                        var doughnutData = [
-                            {
-                                value: 90,
-                                color: "#74cfae"
-        },
-                            {
-                                value: 10,
-                                color: "#3c3c3c"
-        }
-       ];
-                        var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                </div>
-                <div class="col-lg-3 mt">
-                    <canvas id="wordpress" height="130" width="130"></canvas>
-                    <p>Wordpress</p>
-                    <br>
-                    <script>
-                        var doughnutData = [
-                            {
-                                value: 65,
-                                color: "#74cfae"
-        },
-                            {
-                                value: 35,
-                                color: "#3c3c3c"
-        }
-       ];
-                        var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                </div>
-                <div class="col-lg-3 mt">
-                    <canvas id="photoshop" height="130" width="130"></canvas>
-                    <p>Photoshop</p>
-                    <br>
-                    <script>
-                        var doughnutData = [
-                            {
-                                value: 50,
-                                color: "#74cfae"
-        },
-                            {
-                                value: 50,
-                                color: "#3c3c3c"
-        }
-       ];
-                        var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                </div>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
-    <!-- /skills -->
-
-    <section id="contact"></section>
-    <div id="social">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="col-md-3">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><i class="fa fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /container -->
-    </div>
-    <!-- /social -->
-
-
-    <div id="f">
-        <div class="container">
             <div class="row">
-                <p>Crafted with <i class="fa fa-heart"></i> by BlackTie.co.</p>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p style="text-align:left;">
+                        <a href="#" style="color:#fff;">
+                            <i class="fa fa-facebook fa-4x"></i>
+                        </a>
+                        <a href="#" style="color:#fff;">
+                            <i class="fa fa-twitter fa-4x"></i>
+                        </a>
+                        <a href="#" style="color:#fff;">
+                            <i class="fa fa-pinterest fa-4x"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <p>
+                        (309)-343-3443
+                        <br>174 Danvers Road
+                        <br/>Congerville, IL 61729
+                        <br/>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/holder.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/holder.js"></script>
 </body>
 
 </html>

@@ -3,68 +3,54 @@
 
 <head>
 
-    <!-- ### GOOGLE ANALYTICS ### -->
+    <!--  ### GOOGLE ANALYTICS ###  -->
 
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script></script>
 
-        ga('create', 'UA-54337111-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <!-- ### META ### -->
+    <!--  ### META ###  -->
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Country Caf&eacute; is a restaurant in Congerville IL where good country cooking is served" />
+    <meta name="description" content="Country Café is a restaurant in Congerville IL where good country cooking is served" />
 
-    <!-- ### TITLE ### -->
+    <!--  ### TITLE ###  -->
 
-    <title>Country Caf&eacute; | Country Cooking</title>
+    <title>Country Café | Country Cooking</title>
 
-    <!-- ### FAVICON ### -->
+    <!--  ### FAVICON ###  -->
 
     <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <!-- ### CSS ### -->
+    <!--  ### CSS ###  -->
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
 
-    <!-- ### JAVASCRIPT ### -->
+    <!--  ### JAVASCRIPT ###  -->
 
     <script src="//www.google-analytics.com/analytics.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-    <!-- ### IE HACKS ### -->
+    <!--  ### IE HACKS ###  -->
 
-    <!-- [if lt IE 9]>
+    <!--  [if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif] -->
+    <![endif]  -->
 
 </head>
 
-<body>
+<body style="">
 
-    <!-- ### NAVBAR ### -->
+    <!--  ### NAVBAR ###  -->
 
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-coffee"></i> Country Caf&eacute;</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-coffee"></i> Country Café</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -74,7 +60,7 @@
         </div>
     </div>
 
-    <!-- ### WELCOME SECTION ### -->
+    <!--  ### WELCOME SECTION ###  -->
 
     <div id="intro">
         <div class="container">
@@ -87,34 +73,35 @@
         </div>
     </div>
 
-    <!-- ### TODAY'S SPECIALS ### -->
+    <!--  ### TODAY'S SPECIALS ###  -->
 
     <div id="specials">
         <div class="container">
-            <div class="row">
+            <div itemscope itemtype="http://schema.org/Product" class="row">
                 <div class="col-lg-5 centered">
 
-                    <!--##########################################-->
-                    <!--####### BEGIN EDITING SPECIAL HERE #######-->
-                    <!--##########################################-->
+                    <!-- ########################################## -->
+                    <!-- ####### BEGIN EDITING SPECIAL HERE ####### -->
+                    <!-- ########################################## -->
 
-                    <img class="img-circle img-thumbnail" itemprop="image" src="assets/img/spaghetti-and-meatball.jpg" alt="Spaghetti and Meatballs" />
+                    <img itemprop="image" class="img-circle img-thumbnail" itemprop="image" src="assets/img/spaghetti-and-meatball.jpg" alt="Spaghetti and Meatballs" />
                 </div>
                 <div class="col-lg-7 centered">
                     <h3 itemprop="name">WEDSDAY'S SPECIAL</h3>
-                    <p itemprop="description">Spaghetti and Meatballs</p>
-                    <p>$8.50</p>
+                    <p itemprop="name" itemprop="description">Spaghetti and Meatballs</p>
 
-                    <!--##########################################-->
-                    <!--######## END EDITING SPECIAL HERE ########-->
-                    <!--##########################################-->
+                    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price">$8.50</p></span>
+
+                    <!-- ########################################## -->
+                    <!-- ######## END EDITING SPECIAL HERE ######## -->
+                    <!-- ########################################## -->
 
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ### POPULAR DISHES ### -->
+    <!--  ### POPULAR DISHES ###  -->
 
     <div id="popular">
         <div class="container">
@@ -122,47 +109,50 @@
                 <h3>POPULAR DISHES</h3>
                 <div class="mt"></div>
 
-                <!--#################################################-->
-                <!--######## BEGIN EDITING POPULAR DISH HERE ########-->
-                <!--#################################################-->
+                <!-- ################################################# -->
+                <!-- ######## BEGIN EDITING POPULAR DISH HERE ######## -->
+                <!-- ################################################# -->
 
-                <div class="col-lg-4 col-md-4" id="pop-dish">
+                <div itemscope itemtype="http://schema.org/Product" class="col-lg-4 col-md-4" id="pop-dish">
                     <a href="#">
-                        <img class="img-rounded img-thumbnail" src="assets/img/breakfast-sandwich.jpeg" alt="breakfast sandwich">
+                        <img itemprop="image" class="img-rounded img-thumbnail" src="assets/img/breakfast-sandwich.jpeg" alt="breakfast sandwich" />
                     </a>
                     <p>
-                        <span>Breakfast Sandwich</span> 
+                        <span itemprop="name">Breakfast Sandwich</span> 
                         <br/>
-                        <span>$3.90</span>
+
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">$3.90</span></span>
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-4" id="pop-dish">
+                <div itemscope itemtype="http://schema.org/Product" class="col-lg-4 col-md-4" id="pop-dish">
                     <a href="#">
-                        <img class="img-rounded img-thumbnail" src="assets/img/sloppy-joe.jpeg" alt="sloppy joe">
+                        <img itemprop="image" class="img-rounded img-thumbnail" src="assets/img/sloppy-joe.jpeg" alt="sloppy joe" />
                     </a>
                     <p>
-                        <span>Sloppy Joe</span> 
+                        <span itemprop="name">Sloppy Joe</span> 
                         <br/>
-                        <span>$3.00</span>
+
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">$3.00</span></span>
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-4" id="pop-dish">
+                <div itemscope itemtype="http://schema.org/Product" class="col-lg-4 col-md-4" id="pop-dish">
                     <a href="#">
-                        <img class="img-rounded img-thumbnail" src="assets/img/chili.jpeg" alt="chile">
+                        <img itemprop="image" class="img-rounded img-thumbnail" src="assets/img/chili.jpeg" alt="chile" />
                     </a>
                     <p>
-                        <span>Chili</span> 
+                        <span itemprop="name">Chili</span> 
                         <br/>
-                        <span>$3.00</span>
+
+                        <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">$3.00</span></span>
                     </p>
                 </div>
             </div>
 
-            <!--################################################-->
-            <!--######## END EDITING POPULAR DISH HERE #########-->
-            <!--################################################-->
+            <!-- ################################################ -->
+            <!-- ######## END EDITING POPULAR DISH HERE ######### -->
+            <!-- ################################################ -->
 
-            <!-- ### MENU BUTTON ### -->
+            <!--  ### MENU BUTTON ###  -->
 
             <div class="row centered">
                 <div class="col-lg-12">
@@ -174,7 +164,7 @@
         </div>
     </div>
 
-    <!-- ### MENU MODAL ### -->
+    <!--  ### MENU MODAL ###  -->
 
     <div class="modal fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -187,11 +177,11 @@
                 <div class="modal-body">
                     <ul class="list-group">
 
-                        <!--##########################################-->
-                        <!--######## BEGIN EDITING MENU HERE #########-->
-                        <!--##########################################-->
+                        <!-- ########################################## -->
+                        <!-- ######## BEGIN EDITING MENU HERE ######### -->
+                        <!-- ########################################## -->
 
-                        <!--### SANDWICHES ###-->
+                        <!-- ### SANDWICHES ### -->
 
                         <li id="menu-active" class="list-group-item active">
                             Sandwiches
@@ -213,7 +203,7 @@
                             Cras justo odio
                         </li>
 
-                        <!--### PLATES ###-->
+                        <!-- ### PLATES ### -->
 
                         <li id="menu-active" class="list-group-item active">
                             Plates
@@ -231,7 +221,7 @@
                             Cras justo odio
                         </li>
 
-                        <!--### SOUPS ###-->
+                        <!-- ### SOUPS ### -->
 
                         <li id="menu-active" class="list-group-item active">
                             Soups
@@ -249,7 +239,7 @@
                             Cras justo odio
                         </li>
 
-                        <!--### SIDES ###-->
+                        <!-- ### SIDES ### -->
 
                         <li id="menu-active" class="list-group-item active">
                             Sides
@@ -270,7 +260,7 @@
                             Cras justo odio
                         </li>
 
-                        <!--### DRINKS ###-->
+                        <!-- ### DRINKS ### -->
 
                         <li id="menu-active" class="list-group-item active">
                             Drinks
@@ -291,9 +281,9 @@
                             Cras justo odio
                         </li>
 
-                        <!--##########################################-->
-                        <!--######### END EDITING MENU HERE ##########-->
-                        <!--##########################################-->
+                        <!-- ########################################## -->
+                        <!-- ######### END EDITING MENU HERE ########## -->
+                        <!-- ########################################## -->
 
                     </ul>
                 </div>
@@ -304,7 +294,7 @@
         </div>
     </div>
 
-    <!-- ### FOOTER ### -->
+    <!--  ### FOOTER ###  -->
 
     <div id="footerwrap">
         <div class="container">
@@ -325,7 +315,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4">
-                    <h4>Address &amp; Number</h4>
+                    <h4>Address & Number</h4>
                     <div class="hline-w"></div>
                     <p>
                         174 Danvers Road
@@ -345,7 +335,7 @@
         </div>
     </div>
 
-    <!-- ### JAVASCRIPT ### -->
+    <!--  ### JAVASCRIPT ###  -->
 
     <script src="assets/js/bootstrap.min.js"></script>
 

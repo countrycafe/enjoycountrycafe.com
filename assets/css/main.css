@@ -1,7 +1,8 @@
 /* Fonts */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
 /* Body */
 
 body {
@@ -16,12 +17,7 @@ body {
 }
 /* Titles */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
@@ -41,7 +37,7 @@ p {
 /* Links */
 
 a {
-    color: #f85c37;
+    color: #D9B359;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -49,14 +45,12 @@ a {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-a:hover,
-a:focus {
-    color: #7b7b7b;
+a:hover, a:focus {
+    color: #7B7B7B;
     text-decoration: none;
     outline: 0;
 }
-a:before,
-a:after {
+a:before, a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -69,22 +63,20 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCC;
     margin: 1em 0;
     padding: 0;
 }
 .navbar {
     font-weight: 800;
     font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFF;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: #74cfae;
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #D9B359;
 }
 .navbar-brand {
     font-size: 35px;
@@ -92,13 +84,13 @@ hr {
     padding-bottom: 0px;
 }
 .btn-theme {
-    color: #ffffff;
+    color: #FFF;
     background-color: #D9B359;
     border-color: transparent;
 }
 .btn {
     padding: 10px 30px;
-    margin-bottom: 0;
+    margin-top: 15px;
     font-size: 18px;
     border: 5px solid transparent;
     border-radius: 0px;
@@ -107,29 +99,29 @@ hr {
     letter-spacing: 1px;
 }
 .hline {
-    border-bottom: 2px solid #384452;
+    border-bottom: 2px solid #D9B359;
 }
 .hline-w {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #FFF;
     margin-bottom: 25px;
 }
-/* Intro */
+/* Header */
 
-#intro {
+header {
     width: 100%;
     padding-top: 150px;
     padding-bottom: 200px;
     background: url("img/bg.png") center;
 }
-#intro h1 {
+header h1 {
     font-size: 90px;
-    font-weight: 700;
+    font-weight: 700px;
     letter-spacing: 3px;
     color: #D9B359;
 }
-#intro h2 {
-    color: #c0c0c0;
-    font-weight: 400;
+header h2 {
+    color: #C0C0C0;
+    font-weight: 400px;
 }
 /* Specials */
 
@@ -140,12 +132,12 @@ hr {
     margin-bottom: 0px;
 }
 #specials h3 {
-    color: white;
+    color: #FFF;
     font-weight: 400;
     margin-bottom: 35px;
 }
 #specials p {
-    color: white;
+    color: #FFF;
     font-weight: 400;
     font-size: 20px;
 }
@@ -159,24 +151,22 @@ hr {
 }
 /* Footer */
 
-#footerwrap {
+footer {
     padding-top: 50px;
     padding-bottom: 50px;
     background: #4E4E4E;
+    color: #F2F2F2;
 }
-#footerwrap p {
-    color: #f2f2f2;
+footer h4 {
+    color: #F2F2F2;
 }
-#footerwrap h4 {
-    color: #f2f2f2;
-}
-#footerwrap i {
+footer a {
     font-size: 30px;
-    color: #f2f2f2;
+    color: #F2F2F2;
     padding-right: 25px;
 }
-#footerwrap i:hover {
-    color: #74cfae;
+footer a:hover {
+    color: #D9B359;
 }
 /* Social */
 
@@ -184,9 +174,18 @@ hr {
     text-align: left;
     color: #FFF;
 }
+/* Address and Number */
+
+#map {
+    text-align: right;
+    padding-left: 5px;
+}
 /* Menu */
 
 #menu-active {
     background-color: #D9B359;
-    border-color: #D9B359;
+    border-color: transparent;
+}
+.offer {
+    float: right;
 }
